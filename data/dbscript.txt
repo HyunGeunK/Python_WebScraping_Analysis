@@ -3,7 +3,7 @@ mysql -u root –p
 show databases;
 use mysql;
 create database python_db;
-create user 'python'@'%' identified by 'python';
+create user 'python'@'%' identified by '1234';
 grant all privileges on python_db.* to 'python'@'%';
 flush privileges;
 select user, host from user;
